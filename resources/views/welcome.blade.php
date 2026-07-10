@@ -54,6 +54,7 @@
     Bienvenido:<br>
     Leonardo Peña Añez<br>
     Nazel Alexander Felipez Felipez<br>
+    Jose Manuel Rojas Vargas<br>
     Bill Jhon Mita Apaza
 </h1>
 
