@@ -15,6 +15,20 @@
                             <p class="text-uppercase text-primary fw-semibold mb-2">Vista personal</p>
                             <h1 class="display-6 fw-bold mb-3">Bienvenido</h1>
                             <p class="lead mb-0">Leonardo Peña Añez</p>
+                            
+                            @if (session('message'))
+                                <div class="alert alert-success">
+                                    {{ session('message') }}
+                                </div>
+                            @endif
+
+                            <form action="{{ route('controlL.store') }}" method="POST">
+                                @csrf
+                                <button type="submit" class="btn btn-primary">
+                                    Probar controlador
+                                </button>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>
