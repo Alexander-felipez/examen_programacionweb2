@@ -12,6 +12,10 @@ Route::get('/inicioL', [controL::class, 'index']);
 Route::get('/inicioJ', [InicioJController::class, 'index'])->name('inicioJ.index');
 Route::post('/inicioJ', [InicioJController::class, 'store'])->name('inicioJ.store');
 
+Route::get('/inicioB', function () {
+    return view('inicioB');
+})->name('inicioB');
+
 /*
 Route::get('/', function () {
     return view('inicioL');
